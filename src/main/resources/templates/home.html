@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Activity Viewer</title>
+</head>
+<body>
+    <h2>Добрый день!</h2>
+    <form th:action="@{/results}" method="get">
+        <p>Вставьте ссылку на GitHub в поле ниже</p>
+        <label>
+            <input type="text" name="githubUrl" placeholder="GitHub URL"/>
+            <button type="submit">Отправить</button>
+        </label>
+    </form>
+</body>
+</html>
