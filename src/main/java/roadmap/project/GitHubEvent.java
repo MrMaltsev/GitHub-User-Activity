@@ -6,5 +6,6 @@ public class GitHubEvent {
     public Actor actor;
     public Repo repo;
     public String created_at;
+    public Payload payload;
 }
 

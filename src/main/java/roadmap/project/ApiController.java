@@ -14,7 +14,7 @@ public class ApiController {
     }
 
     @GetMapping("/api/activity")
-    public GitHubEvent[] getActivity(@RequestParam String user) {
-        return parser.getUserActivity(user);
+    public String getActivity(@RequestParam String user) {
+        return parser.getFormattedActivity(user);
     }
 }

@@ -24,10 +24,10 @@ public class WebController {
 
         String username = githubUrl.replace("https://github.com/", "").split("/")[0];
 
-        GitHubEvent[] events = parser.getUserActivity(username);
+        String formattedResult = parser.getFormattedActivity(username);
 
-        model.addAttribute("events", events);
         model.addAttribute("username", username);
+        model.addAttribute("result", formattedResult);
 
         return "results";
     }

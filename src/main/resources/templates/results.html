@@ -6,14 +6,7 @@
 </head>
 <body>
 <h2>Recent Activity for <span th:text="${username}"></span></h2>
-<ul>
-    <li th:each="event : ${events}">
-        <strong th:text="${event.type}"></strong> in
-        <span th:text="${event.repo.name}"></span> by
-        <span th:text="${event.actor.login}"></span> at
-        <span th:text="${event.created_at}"></span>
-    </li>
-</ul>
+<pre th:text="${result}">Загрузка...</pre>
 <a th:href="@{/home}">Back to Home</a>
 </body>
 </html>
